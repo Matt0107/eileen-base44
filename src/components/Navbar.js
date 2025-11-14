@@ -23,24 +23,15 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Ligne du haut : logo + langue */}
-        <div className="navbar-top">
+        {/* Bloc gauche : logo */}
+        <div className="navbar-left">
           <Link to="/" className="navbar-logo">
             Eileen Baum
           </Link>
-
-          <button
-            onClick={toggleLanguage}
-            className="lang-button"
-            aria-label="Toggle language"
-          >
-            <Globe size={18} />
-            {i18n.language.toUpperCase()}
-          </button>
         </div>
 
-        {/* Ligne du bas : liens de navigation */}
-        <div className="navbar-links">
+        {/* Bloc centre : liens */}
+        <div className="navbar-center">
           {navItems.map((item) => (
             <Link
               key={item.path}
@@ -52,6 +43,18 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
+        </div>
+
+        {/* Bloc droite : sélecteur de langue */}
+        <div className="navbar-right">
+          <button
+            onClick={toggleLanguage}
+            className="lang-button"
+            aria-label="Toggle language"
+          >
+            <Globe size={18} />
+            {i18n.language.toUpperCase()}
+          </button>
         </div>
       </div>
     </nav>

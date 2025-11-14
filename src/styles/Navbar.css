@@ -7,25 +7,47 @@
   z-index: 100;
 }
 
-/* Container principal */
+/* ============================= */
+/*     DESKTOP (par défaut)      */
+/* ============================= */
+
 .navbar-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
   height: 70px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Ligne du haut : logo + langue */
-.navbar-top {
+/* 
+   On sépare proprement :
+   - bloc gauche = logo
+   - bloc centre = liens
+   - bloc droite = langue 
+*/
+
+.navbar-left {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-/* Logo */
+.navbar-center {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: auto;
+  margin-right: 20px; /* espace avant sélecteur langue */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+
 .navbar-logo {
   font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 25px;
@@ -34,15 +56,7 @@
   white-space: nowrap;
 }
 
-/* Ligne du bas : liens */
-.navbar-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  margin-top: 0.5rem;
-}
-
-/* Liens du menu */
+/* liens */
 
 .navbar-link {
   position: relative;
@@ -79,10 +93,9 @@
   color: var(--gold);
 }
 
-/* Bouton langue */
+/* Langue */
 
 .lang-button {
-  margin-left: 10px;
   background: none;
   border: none;
   font-size: 14px;
@@ -101,30 +114,47 @@
   transform: scale(1.05);
 }
 
-/* ============================================= */
-/*   VERSION MOBILE – COMME BASE44 (2 BLOCS)     */
-/* ============================================= */
-
+/* ============================= */
+/*        MOBILE VERSION         */
+/* ============================= */
 @media (max-width: 768px) {
   .navbar-container {
     padding: 0.75rem 1rem;
     height: auto;
-    align-items: stretch;
+    flex-wrap: wrap;        /* on autorise le retour à la ligne */
+    align-items: center;
   }
 
-  /* Ligne du haut : logo + langue toujours sur une seule ligne */
-  .navbar-top {
-    width: 100%;
+  /* Ligne 1 : logo (gauche) + langue (droite) */
+  .navbar-left {
+    order: 1;               /* 1er */
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
   }
 
-  /* Ligne du bas : liens avec séparation */
-  .navbar-links {
+  .navbar-right {
+    order: 2;               /* 2e */
+    display: flex;
+    align-items: center;
+    margin-left: auto;      /* pousse la langue à droite */
+  }
+
+  /* Ligne 2 : liens sur toute la largeur */
+  .navbar-center {
+    order: 3;               /* 3e : toujours sous logo+langue */
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
-    gap: 10px 18px;
+    justify-content: flex-start;
+    gap: 12px 18px;
+
     border-top: 1px solid #f2f2f2;
-    padding-top: 0.5rem;
-    margin-top: 0.5rem;
+    padding-top: 0.6rem;
+    margin-top: 0.6rem;
+
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .navbar-link,
