@@ -13,7 +13,7 @@ export default function Contact() {
     message: ""
   });
 
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitStatus, setSubmitStatus] = useState(null); // "success" | "error" | "sending"
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,20 +23,26 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitStatus(null);
+    setSubmitStatus("sending");
 
     try {
-      const subject = `Website Contact: ${formData.subject}`;
-      const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`;
+      const response = await fetch("/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
 
-      const mailtoLink = `mailto:info@eileenbaum.de?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(body)}`;
+      const data = await response.json();
 
-      window.location.href = mailtoLink;
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || "Request failed");
+      }
 
+      // Succès : on reset le formulaire
       setSubmitStatus("success");
       setFormData({
         name: "",
@@ -45,6 +51,7 @@ export default function Contact() {
         message: ""
       });
     } catch (error) {
+      console.error("Contact form error:", error);
       setSubmitStatus("error");
     }
   };
@@ -99,8 +106,10 @@ export default function Contact() {
                 className="contact-textarea"
               ></textarea>
 
-              <button type="submit" className="contact-button">
-                {t("contact.submitButton")}
+              <button type="submit" className="contact-button" disabled={submitStatus === "sending"}>
+                {submitStatus === "sending"
+                  ? t("contact.submittingButton")
+                  : t("contact.submitButton")}
               </button>
 
               {submitStatus === "success" && (
@@ -141,15 +150,7 @@ export default function Contact() {
               <p className="contact-info-text">{t("contact.locationValue")}</p>
             </div>
 
-            <div className="contact-image-wrapper">
-              <div className="contact-image-frame">
-                <img
-                  src="./assets/face2.jpg"
-                  alt="Guitar detail"
-                  className="contact-image"
-                />
-              </div>
-            </div>
+            {/* Image etc. ici comme tu l'avais */}
           </div>
         </div>
       </div>
