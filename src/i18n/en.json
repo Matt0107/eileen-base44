@@ -127,5 +127,21 @@
       "description": "Solo recital at Sala Nietzsche in Lisbon."
     }
   ]
+},
+"contact": {
+  "title": "Contact",
+  "subtitle": "Get in touch with me",
+  "namePlaceholder": "Your name",
+  "emailPlaceholder": "Your email address",
+  "subjectPlaceholder": "Subject",
+  "messagePlaceholder": "Your message",
+  "submitButton": "Send message",
+  "successMessage": "Thank you! Your message has been prepared. Please check your email application.",
+  "errorMessage": "An error occurred. Please try again.",
+  "infoTitle": "Contact information",
+  "emailLabel": "Email",
+  "locationLabel": "Location",
+  "locationValue": "Berlin, Germany",
+  "emailValue": "info@eileenbaum.de"
 }
 }
