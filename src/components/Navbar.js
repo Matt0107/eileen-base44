@@ -16,14 +16,30 @@ export default function Navbar() {
     { name: t("nav.contact"), path: "/contact" }
   ];
 
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "de" ? "en" : "de");
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        {/* Ligne du haut : logo + langue */}
+        <div className="navbar-top">
+          <Link to="/" className="navbar-logo">
+            Eileen Baum
+          </Link>
 
-        <Link to="/" className="navbar-logo">
-          Eileen Baum
-        </Link>
+          <button
+            onClick={toggleLanguage}
+            className="lang-button"
+            aria-label="Toggle language"
+          >
+            <Globe size={18} />
+            {i18n.language.toUpperCase()}
+          </button>
+        </div>
 
+        {/* Ligne du bas : liens de navigation */}
         <div className="navbar-links">
           {navItems.map((item) => (
             <Link
@@ -36,14 +52,6 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
-
-          <button
-            onClick={() => i18n.changeLanguage(i18n.language === "de" ? "en" : "de")}
-            className="lang-button"
-          >
-            <Globe size={18} />
-            {i18n.language.toUpperCase()}
-          </button>
         </div>
       </div>
     </nav>
