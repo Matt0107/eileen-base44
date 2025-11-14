@@ -8,5 +8,25 @@
   },
   "footer": {
     "copyright": "© 2025 Eileen Baum. All rights reserved."
-  }
+  },
+  "about": {
+  "title": "About",
+  "subtitle": "My musical journey",
+  "bio1": "Berlin-born guitarist Eileen Baum received her first guitar lessons at the age of ten. Her musical talent soon became evident, and three years later she met Prof. Rainer Feldmann, who was to become a key artistic mentor.",
+  "bio2": "From 2009 to 2014 she studied with Prof. Feldmann at the Berlin University of the Arts, completing her studies in 2016 with the distinguished concert exam. Masterclasses with renowned artists such as David Russell, Álvaro Pierri and Aniello Desiderio further shaped her technical refinement and expressive sound palette.",
+  "bio3": "Eileen Baum has taken part in numerous national and international competitions. In 2005 she was awarded first prize in the guitar duo category at the German competition “Jugend musiziert”, an early milestone in her artistic development.",
+  "bio4": "Alongside her solo career, she regularly performs in various chamber music ensembles in Germany and abroad. In 2019 her debut album “SCHMUCKSTÜCKE” was released on the Czech label ArcoDiva, featuring works by Heitor Villa-Lobos, Joaquín Rodrigo and Johann Sebastian Bach and showcasing her stylistic range and attention to detail.",
+  "educationTitle": "Education",
+  "awardsTitle": "Awards",
+  "educationList": [
+    "Classical guitar studies at the Berlin University of the Arts with Prof. Rainer Feldmann (2009–2014)",
+    "Concert exam at the Berlin University of the Arts (2016)",
+    "Masterclasses with David Russell, Álvaro Pierri, Aniello Desiderio and others"
+  ],
+  "awardsList": [
+    "First prize (guitar duo), German national competition “Jugend musiziert” 2005",
+    "Prizes and awards at national and international guitar competitions",
+    "Release of the debut album “SCHMUCKSTÜCKE” (ArcoDiva label, 2019)"
+  ]
+}
 }

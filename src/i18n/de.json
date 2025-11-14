@@ -8,5 +8,25 @@
   },
   "footer": {
     "copyright": "© 2025 Eileen Baum. Alle Rechte vorbehalten."
-  }
+  },
+  "about": {
+  "title": "Über Mich",
+  "subtitle": "Meine musikalische Reise",
+  "bio1": "Die in Berlin geborene Gitarristin Eileen Baum erhielt im Alter von zehn Jahren ihren ersten Gitarrenunterricht. Schon früh wurde ihr besonderes musikalisches Talent sichtbar; drei Jahre später begegnete sie Prof. Rainer Feldmann, der zu einer prägenden künstlerischen Bezugsperson wurde.",
+  "bio2": "Von 2009 bis 2014 studierte sie bei Prof. Feldmann an der Universität der Künste Berlin. 2016 schloss sie ihr Studium mit dem Konzertexamen ab. Wichtige Impulse erhielt sie zudem in Meisterkursen, unter anderem bei David Russell, Álvaro Pierri und Aniello Desiderio, die ihre technische Brillanz und ihre klangliche Differenziertheit weiter formten.",
+  "bio3": "Eileen Baum hat an zahlreichen nationalen und internationalen Wettbewerben teilgenommen. Bereits 2005 wurde sie beim Bundeswettbewerb „Jugend musiziert“ mit dem ersten Preis in der Kategorie Gitarrenduo ausgezeichnet – ein früher Meilenstein auf ihrem künstlerischen Weg.",
+  "bio4": "Neben ihrer solistischen Tätigkeit tritt sie regelmäßig in verschiedenen kammermusikalischen Besetzungen im In- und Ausland auf. 2019 erschien beim tschechischen Label ArcoDiva ihr Debütalbum „SCHMUCKSTÜCKE“ mit Werken von Heitor Villa-Lobos, Joaquín Rodrigo und Johann Sebastian Bach, das ihre stilistische Bandbreite und ihre Liebe zum Detail eindrucksvoll dokumentiert.",
+  "educationTitle": "Ausbildung",
+  "awardsTitle": "Auszeichnungen",
+  "educationList": [
+    "Studium der klassischen Gitarre an der Universität der Künste Berlin bei Prof. Rainer Feldmann (2009–2014)",
+    "Konzertexamen an der Universität der Künste Berlin (2016)",
+    "Meisterkurse u. a. bei David Russell, Álvaro Pierri und Aniello Desiderio"
+  ],
+  "awardsList": [
+    "Erster Preis (Gitarrenduo), Bundeswettbewerb „Jugend musiziert“ 2005",
+    "Preise und Auszeichnungen bei nationalen und internationalen Gitarrenwettbewerben",
+    "Veröffentlichung des Debütalbums „SCHMUCKSTÜCKE“ (Label ArcoDiva, 2019)"
+  ]
+}
 }
