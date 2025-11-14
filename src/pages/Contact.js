@@ -144,7 +144,7 @@ export default function Contact() {
             <div className="contact-image-wrapper">
               <div className="contact-image-frame">
                 <img
-                  src="https://images.unsplash.com/photo-1519683384663-88b3e6c44b04?w=600&h=600&fit=crop"
+                  src="./assets/face2.jpg"
                   alt="Guitar detail"
                   className="contact-image"
                 />

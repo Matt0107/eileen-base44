@@ -132,6 +132,7 @@
   height: auto;
   display: block;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 /* RESPONSIVE */

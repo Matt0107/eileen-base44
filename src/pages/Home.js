@@ -115,7 +115,7 @@ export default function Home() {
       <section className="home-image-section">
         <div className="home-image-wrapper">
           <img
-            src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1200&h=675&fit=crop"
+            src="./assets/main.jpg"
             alt="Classical Guitar"
             className="home-image"
           />
