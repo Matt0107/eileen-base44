@@ -28,5 +28,104 @@
     "Preise und Auszeichnungen bei nationalen und internationalen Gitarrenwettbewerben",
     "Veröffentlichung des Debütalbums „SCHMUCKSTÜCKE“ (Label ArcoDiva, 2019)"
   ]
+},
+"media": {
+  "title": "Medien",
+  "subtitle": "Aufführungen und Aufnahmen",
+  "videosTitle": "Videoaufnahmen",
+  "noVideos": "Videoinhalte werden in Kürze hinzugefügt",
+  "video1Title": "Bach – Präludium",
+  "video1Desc": "Ein poetisches und fein nuanciertes Präludium.",
+  "video2Title": "Tárrega – Recuerdos de la Alhambra",
+  "video2Desc": "Ein klassisches Tremolo-Stück voller Eleganz.",
+  "video3Title": "Villa-Lobos – Etüde Nr. 1",
+  "video3Desc": "Rhythmische Kraft und technische Brillanz.",
+  "video4Title": "Bach – Bourrée",
+  "video4Desc": "Ein barockes Meisterwerk fein interpretiert.",
+  "video5Title": "Rodrigo – En Los Trigales",
+  "video5Desc": "Spanische Farben und virtuoser Ausdruck."
+},
+"calendar": {
+  "title": "Kalender",
+  "subtitle": "Vergangene Veranstaltungen",
+  "events": [
+    {
+      "title": "MS Amadea",
+      "venue": "Konzertreise an Bord der MS Amadea",
+      "date": "11.–25. September 2024",
+      "location": "England, Frankreich, Spanien",
+      "description": "Solistische Auftritte im Rahmen einer Kreuzfahrt an Bord der MS Amadea."
+    },
+    {
+      "title": "Sommer Palais Dresden",
+      "venue": "Konzert im Sommerpalais Dresden",
+      "date": "27. Juli 2024",
+      "location": "Dresden, Deutschland",
+      "description": "Rezital im historischen Sommerpalais in Dresden."
+    },
+    {
+      "title": "MS Artania",
+      "venue": "Konzertreise an Bord der MS Artania",
+      "date": "27. Juni – 11. Juli 2024",
+      "location": "Norwegen",
+      "description": "Gitarrenkonzerte an Bord der MS Artania auf einer Kreuzfahrt entlang der norwegischen Küste."
+    },
+    {
+      "title": "Dominikanerkloster",
+      "venue": "Konzert im Dominikanerkloster",
+      "date": "9. September 2023",
+      "location": "Prenzlau, Deutschland",
+      "description": "Solokonzert im historischen Dominikanerkloster in Prenzlau."
+    },
+    {
+      "title": "Barockschloss Zeilitzheim",
+      "venue": "Konzert im Barockschloss Zeilitzheim",
+      "date": "26. Mai 2023",
+      "location": "Kolitzheim, Deutschland",
+      "description": "Kammermusikalischer Abend im Barockschloss Zeilitzheim."
+    },
+    {
+      "title": "MS Artania",
+      "venue": "Konzertreise an Bord der MS Artania",
+      "date": "21. März – 7. April 2023",
+      "location": "Afrika & Spanien",
+      "description": "Solistische Auftritte während einer Kreuzfahrt an Bord der MS Artania rund um Afrika und Spanien."
+    },
+    {
+      "title": "MS Artania",
+      "venue": "Konzertreise an Bord der MS Artania",
+      "date": "9.–29. Oktober 2022",
+      "location": "Europa",
+      "description": "Gitarrenkonzerte im Rahmen einer europäischen Kreuzfahrt auf der MS Artania."
+    },
+    {
+      "title": "Midsummer Vilnius",
+      "venue": "Midsummer-Festival",
+      "date": "18. Juli 2022",
+      "location": "Vilnius, Litauen",
+      "description": "Auftritt beim Midsummer Festival in Vilnius."
+    },
+    {
+      "title": "Gemeindehaus Amrum",
+      "venue": "Konzert im Gemeindehaus Amrum",
+      "date": "5. Mai 2022",
+      "location": "Berlin, Deutschland",
+      "description": "Rezital im Gemeindehaus Amrum."
+    },
+    {
+      "title": "Jagdzeugmagazin Schloss Grunewald",
+      "venue": "Konzert im Jagdzeugmagazin",
+      "date": "6. März 2022",
+      "location": "Berlin, Deutschland",
+      "description": "Kammermusikalischer Abend im Jagdzeugmagazin von Schloss Grunewald."
+    },
+    {
+      "title": "Sala Nietzsche",
+      "venue": "Konzert in der Sala Nietzsche",
+      "date": "5. Februar 2022",
+      "location": "Lissabon, Portugal",
+      "description": "Solokonzert in der Sala Nietzsche in Lissabon."
+    }
+  ]
 }
 }

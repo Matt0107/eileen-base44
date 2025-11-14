@@ -1,0 +1,100 @@
+.calendar-page {
+  min-height: 100vh;
+  padding: 6rem 1.5rem 4rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.calendar-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Titres */
+
+.calendar-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 3.2rem);
+  margin-bottom: 0.5rem;
+}
+
+.calendar-subtitle {
+  font-size: 1.1rem;
+  color: var(--gold);
+  margin-bottom: 3rem;
+}
+
+/* Liste d'événements */
+
+.calendar-events {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.calendar-event {
+  border-left: 2px solid var(--gold);
+  padding-left: 1.75rem;
+}
+
+/* Titre / lieu */
+
+.calendar-event-header {
+  margin-bottom: 0.75rem;
+}
+
+.calendar-event-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.calendar-event-venue {
+  font-size: 1rem;
+}
+
+/* Meta (date / lieu avec icônes) */
+
+.calendar-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.calendar-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.calendar-meta-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--gold);
+}
+
+/* Description */
+
+.calendar-description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .calendar-page {
+    padding: 5.5rem 1rem 3rem;
+  }
+
+  .calendar-event {
+    padding-left: 1.25rem;
+  }
+
+  .calendar-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
