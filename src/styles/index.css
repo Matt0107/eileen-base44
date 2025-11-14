@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+:root {
+  --gold: #d4af37;
+}

@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Mich",
+    "media": "Medien",
+    "calendar": "Kalender",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "copyright": "© 2025 Eileen Baum. Alle Rechte vorbehalten."
+  }
+}
