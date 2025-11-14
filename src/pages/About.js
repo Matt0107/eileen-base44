@@ -18,7 +18,7 @@ export default function About() {
         <div className="about-portrait-wrapper">
           <div className="about-portrait-frame">
             <img
-              src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&h=1000&fit=crop"
+              src="./assets/eileen2.jpg"
               alt="Eileen Baum"
               className="about-portrait-image"
             />

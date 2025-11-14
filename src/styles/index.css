@@ -14,3 +14,29 @@ body {
 *::after {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../assets/fonts/playfair-display/PlayfairDisplay-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../assets/fonts/playfair-display/PlayfairDisplay-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../assets/fonts/playfair-display/PlayfairDisplay-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
