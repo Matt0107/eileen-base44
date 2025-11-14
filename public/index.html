@@ -1,50 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Title -->
+    <title>Eileen Baum – Classical Guitarist</title>
+
+    <!-- Favicon (ancien code adapté à CRA) -->
+    <link rel="icon" href="%PUBLIC_URL%/assets/guitar.ico" />
+
+    <!-- PWA / Theme -->
     <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- SEO de base -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Berlin-born classical guitarist Eileen Baum. Biography, concert calendar, media and contact information in German and English."
     />
+
+    <!-- Open Graph (partage réseaux sociaux) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Eileen Baum – Classical Guitarist" />
+    <meta
+      property="og:description"
+      content="Discover Berlin-born classical guitarist Eileen Baum: concerts, recordings, media and contact."
+    />
+    <!-- Image à créer dans public/assets/og-image.jpg si tu veux un visuel de partage -->
+    <meta property="og:image" content="%PUBLIC_URL%/assets/og-image.jpg" />
+
+    <!-- Twitter Card (si un jour elle est partagée sur X/Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Eileen Baum – Classical Guitarist" />
+    <meta
+      name="twitter:description"
+      content="Berlin-born classical guitarist Eileen Baum. Concerts, recordings, media and contact."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/assets/og-image.jpg" />
+
+    <!-- Optimisation fonts (Playfair Display + autres via Google Fonts, si utilisé) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Si tu charges déjà ces fonts depuis le CSS, tu peux soit garder cette ligne
+         soit la commenter pour éviter un doublon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Données structurées Schema.org (aide Google à comprendre le site) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Eileen Baum",
+        "jobTitle": "Classical guitarist",
+        "description": "Berlin-born classical guitarist performing internationally, with a focus on Spanish and Latin American repertoire.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Berlin",
+          "addressCountry": "DE"
+        },
+        "sameAs": [
+          "https://www.youtube.com/channel/UCsezrcwS3afG6R4kYCGEiqg",
+          "https://open.spotify.com/artist/6BEnmlx54iiGEDYXS7jcN4",
+          "https://music.apple.com/gd/artist/eileen-baum/1497923452"
+        ]
+      }
+    </script>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
