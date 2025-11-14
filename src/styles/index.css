@@ -9,3 +9,8 @@ body {
 :root {
   --gold: #d4af37;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

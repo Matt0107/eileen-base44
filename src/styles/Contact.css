@@ -1,6 +1,6 @@
 .contact-page {
   min-height: 100vh;
-  padding: 6rem 1.5rem 4rem;
+  padding: 6rem 1.25rem 4rem; /* marge gauche/droite visible */
   background-color: #ffffff;
   color: #000000;
 }
@@ -34,6 +34,10 @@
 }
 
 /* Formulaire */
+
+.contact-form-wrapper {
+  width: 100%;
+}
 
 .contact-form {
   display: flex;
@@ -143,7 +147,7 @@
 
 .contact-info-text {
   font-size: 0.95rem;
-  margin-left: 2.2rem; /* décale le texte sous le label, pas sous l’icône */
+  margin-left: 2.2rem;
 }
 
 /* Image */
@@ -168,11 +172,22 @@
   object-fit: cover;
 }
 
-/* Responsive */
+/* ========================= */
+/*       BREAKPOINT 900      */
+/* ========================= */
 
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-inner {
+    max-width: 600px;
+  }
+
+  .contact-form-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   .contact-image-frame {
@@ -180,12 +195,24 @@
   }
 
   .contact-info-text {
-    margin-left: 0; /* sur mobile, on garde simple */
+    margin-left: 0;
   }
 }
 
+/* ========================= */
+/*       BREAKPOINT 600      */
+/* ========================= */
+
 @media (max-width: 600px) {
   .contact-page {
-    padding: 5.5rem 1rem 3rem;
+    padding: 5.5rem 1rem 3rem; /* padding horizontal clair sur mobile */
+  }
+
+  .contact-inner {
+    max-width: 100%;
+  }
+
+  .contact-form-wrapper {
+    max-width: 100%;
   }
 }
