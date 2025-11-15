@@ -29,6 +29,30 @@
     "Veröffentlichung des Debütalbums „SCHMUCKSTÜCKE“ (Label ArcoDiva, 2019)"
   ]
 },
+  "home": {
+    "title": "Eileen Baum",
+    "subtitle": "Klassische Gitarristin",
+    "description": "Erleben Sie die zeitlose Schönheit der klassischen Gitarre durch virtuose Interpretationen und leidenschaftliche Darbietungen.",
+    "featuresTitle": "Entdecken",
+    "features": {
+      "about": {
+        "title": "Über Mich",
+        "description": "Erfahren Sie mehr über meine musikalische Reise"
+      },
+      "media": {
+        "title": "Medien",
+        "description": "Sehen Sie meine Aufführungen und Aufnahmen"
+      },
+      "calendar": {
+        "title": "Kalender",
+        "description": "Vergangene Veranstaltungen und Auftritte"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "description": "Nehmen Sie Kontakt mit mir auf"
+      }
+    }
+  },
 "media": {
   "title": "Medien",
   "subtitle": "Aufführungen und Aufnahmen",

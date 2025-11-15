@@ -29,6 +29,30 @@
     "Release of the debut album “SCHMUCKSTÜCKE” (ArcoDiva label, 2019)"
   ]
 },
+  "home": {
+    "title": "Eileen Baum",
+    "subtitle": "Classical Guitarist",
+    "description": "Experience the timeless beauty of classical guitar through virtuoso interpretations and passionate performances.",
+    "featuresTitle": "Discover",
+    "features": {
+      "about": {
+        "title": "About",
+        "description": "Learn more about my musical journey"
+      },
+      "media": {
+        "title": "Media",
+        "description": "Watch my performances and recordings"
+      },
+      "calendar": {
+        "title": "Calendar",
+        "description": "Previous events and performances"
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Get in touch with me"
+      }
+    }
+  },
 "media": {
   "title": "Media",
   "subtitle": "Performances and Recordings",
