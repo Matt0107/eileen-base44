@@ -175,7 +175,7 @@
   "subjectPlaceholder": "Subject",
   "messagePlaceholder": "Your message",
   "submitButton": "Send message",
-  "successMessage": "Thank you! Your message has been prepared. Please check your email application.",
+  "successMessage": "Thank you! Your message has been successfully sent.",
   "errorMessage": "An error occurred. Please try again.",
   "infoTitle": "Contact information",
   "emailLabel": "Email",

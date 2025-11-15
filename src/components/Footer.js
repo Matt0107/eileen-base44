@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { FaSpotify, FaYoutube, FaApple } from "react-icons/fa";
+import { FaSpotify, FaYoutube, FaApple, FaInstagram } from "react-icons/fa";
 import "../styles/Footer.css";
 
 export default function Footer() {
@@ -13,13 +13,12 @@ export default function Footer() {
     { label: t("nav.about"), path: "/about" },
     { label: t("nav.media"), path: "/media" },
     { label: t("nav.calendar"), path: "/calendar" },
-    { label: t("nav.contact"), path: "/contact" }
+    { label: t("nav.contact"), path: "/contact" },
   ];
 
   return (
     <footer className="footer">
       <div className="footer-inner">
-
         {/* Colonne 1 */}
         <div className="footer-col">
           <h3 className="footer-title">Eileen Baum</h3>
@@ -45,9 +44,7 @@ export default function Footer() {
 
         {/* Colonne 3 : Contact + plateformes */}
         <div className="footer-col">
-          <h4 className="footer-heading">
-            {isDe ? "Kontakt" : "Contact"}
-          </h4>
+          <h4 className="footer-heading">{isDe ? "Kontakt" : "Contact"}</h4>
 
           <p className="footer-text">info@eileenbaum.de</p>
 
@@ -63,6 +60,16 @@ export default function Footer() {
             </a>
 
             <a
+              href="https://open.spotify.com/artist/6BEnmlx54iiGEDYXS7jcN4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-social-link"
+              aria-label="Spotify"
+            >
+              <FaSpotify className="footer-social-icon" />
+            </a>
+
+            <a
               href="https://music.apple.com/gd/artist/eileen-baum/1497923452"
               target="_blank"
               rel="noopener noreferrer"
@@ -73,20 +80,20 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://open.spotify.com/artist/6BEnmlx54iiGEDYXS7jcN4"
+              href="https://www.instagram.com/eileen_guitarist/"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-social-link"
-              aria-label="Spotify"
+              aria-label="Instagram"
             >
-              <FaSpotify className="footer-social-icon" />
+              <FaInstagram className="footer-social-icon" />
             </a>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p className="footer-copy">{t("footer.copyright")}</p>
+        <p className="footer-copy">{t("footer.copyright")} Powered by Serve And Code.</p>
       </div>
     </footer>
   );

@@ -175,7 +175,7 @@
   "subjectPlaceholder": "Betreff",
   "messagePlaceholder": "Ihre Nachricht",
   "submitButton": "Nachricht senden",
-  "successMessage": "Vielen Dank! Ihre Nachricht wurde vorbereitet. Bitte prüfen Sie Ihr E-Mail-Programm.",
+  "successMessage": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.",
   "errorMessage": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
   "infoTitle": "Kontaktinformationen",
   "emailLabel": "E-Mail",
