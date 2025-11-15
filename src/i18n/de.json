@@ -11,11 +11,11 @@
   },
   "about": {
   "title": "Über Mich",
-  "subtitle": "Meine musikalische Reise",
-  "bio1": "Die in Berlin geborene Gitarristin Eileen Baum erhielt im Alter von zehn Jahren ihren ersten Gitarrenunterricht. Schon früh wurde ihr besonderes musikalisches Talent sichtbar; drei Jahre später begegnete sie Prof. Rainer Feldmann, der zu einer prägenden künstlerischen Bezugsperson wurde.",
-  "bio2": "Von 2009 bis 2014 studierte sie bei Prof. Feldmann an der Universität der Künste Berlin. 2016 schloss sie ihr Studium mit dem Konzertexamen ab. Wichtige Impulse erhielt sie zudem in Meisterkursen, unter anderem bei David Russell, Álvaro Pierri und Aniello Desiderio, die ihre technische Brillanz und ihre klangliche Differenziertheit weiter formten.",
-  "bio3": "Eileen Baum hat an zahlreichen nationalen und internationalen Wettbewerben teilgenommen. Bereits 2005 wurde sie beim Bundeswettbewerb „Jugend musiziert“ mit dem ersten Preis in der Kategorie Gitarrenduo ausgezeichnet – ein früher Meilenstein auf ihrem künstlerischen Weg.",
-  "bio4": "Neben ihrer solistischen Tätigkeit tritt sie regelmäßig in verschiedenen kammermusikalischen Besetzungen im In- und Ausland auf. 2019 erschien beim tschechischen Label ArcoDiva ihr Debütalbum „SCHMUCKSTÜCKE“ mit Werken von Heitor Villa-Lobos, Joaquín Rodrigo und Johann Sebastian Bach, das ihre stilistische Bandbreite und ihre Liebe zum Detail eindrucksvoll dokumentiert.",
+  "subtitle": "Musikalischer Werdegang",
+"bio1": "Die in Berlin geborene Gitarristin, Eileen Baum, erhielt ihren ersten Gitarrenunterricht im Alter von 10 Jahren. Drei Jahre später lernte sie Prof. Rainer Feldmann kennen, bei dem sie von 2009 bis 2014 an der Universität der Künste in Berlin Gitarre studierte.",
+"bio2": "2016 schloss sie ihr Studium mit dem Konzertexamen ab. Weitere wichtige Impulse erhielt sie in Meisterkursen, unter anderem bei David Russell, Álvaro Pierri und Aniello Desiderio.",
+"bio3": "Eileen Baum hat an zahlreichen nationalen und internationalen Wettbewerben teilgenommen. So erhielt sie 2005 den ersten Preis in der Kategorie Gitarrenduo bei 'Jugend musiziert'.",
+"bio4": "2019 veröffentlichte das tschechische Label ArcoDiva unter dem Titel 'SCHMUCKSTÜCKE' ihr erstes Album, auf dem Werke von H. Vila-Lobos, J. Rodrigo und J.S. Bach zu hören sind. Neben ihrer solistischen Tätigkeit hat sie in zahlreichen kammermusikalischen Besetzungen im In- und Ausland gespielt.",
   "educationTitle": "Ausbildung",
   "awardsTitle": "Auszeichnungen",
   "educationList": [
@@ -75,81 +75,95 @@
   "subtitle": "Vergangene Veranstaltungen",
   "events": [
     {
+      "title": "Schloss Biesdorf",
+      "venue": "Matinee",
+      "date": "8. März 2026",
+      "location": "Berlin, Deutschland",
+      "description": "Aurelis Guitar Quartet."
+    },
+    {
       "title": "MS Amadea",
-      "venue": "Konzertreise an Bord der MS Amadea",
+      "venue": "Konzertreise",
       "date": "11.–25. September 2024",
       "location": "England, Frankreich, Spanien",
-      "description": "Solistische Auftritte im Rahmen einer Kreuzfahrt an Bord der MS Amadea."
+      "description": "Solistische Auftritte an Bord der MS Amadea."
     },
     {
       "title": "Sommer Palais Dresden",
-      "venue": "Konzert im Sommerpalais Dresden",
+      "venue": "Festival",
       "date": "27. Juli 2024",
       "location": "Dresden, Deutschland",
-      "description": "Rezital im historischen Sommerpalais in Dresden."
+      "description": "Open-Air-Solokonzert."
     },
     {
       "title": "MS Artania",
-      "venue": "Konzertreise an Bord der MS Artania",
+      "venue": "Konzertreise",
       "date": "27. Juni – 11. Juli 2024",
       "location": "Norwegen",
-      "description": "Gitarrenkonzerte an Bord der MS Artania auf einer Kreuzfahrt entlang der norwegischen Küste."
+      "description": "Solistische Auftritte an Bord der MS Artania entlang der norwegischen Küste."
     },
     {
-      "title": "Dominikanerkloster",
-      "venue": "Konzert im Dominikanerkloster",
+      "title": "Dominikanerkloster Prenzlau",
+      "venue": "Konzert",
       "date": "9. September 2023",
       "location": "Prenzlau, Deutschland",
-      "description": "Solokonzert im historischen Dominikanerkloster in Prenzlau."
+      "description": "Rezital im historischen Dominikanerkloster."
     },
     {
       "title": "Barockschloss Zeilitzheim",
-      "venue": "Konzert im Barockschloss Zeilitzheim",
+      "venue": "Konzert",
       "date": "26. Mai 2023",
       "location": "Kolitzheim, Deutschland",
-      "description": "Kammermusikalischer Abend im Barockschloss Zeilitzheim."
+      "description": "Rezital im Barockschloss Zeilitzheim."
     },
     {
       "title": "MS Artania",
-      "venue": "Konzertreise an Bord der MS Artania",
+      "venue": "Konzertreise",
       "date": "21. März – 7. April 2023",
       "location": "Afrika & Spanien",
-      "description": "Solistische Auftritte während einer Kreuzfahrt an Bord der MS Artania rund um Afrika und Spanien."
+      "description": "Solistische Auftritte an Bord der MS Artania rund um Afrika und Spanien."
     },
     {
       "title": "MS Artania",
-      "venue": "Konzertreise an Bord der MS Artania",
+      "venue": "Konzertreise",
       "date": "9.–29. Oktober 2022",
       "location": "Europa",
-      "description": "Gitarrenkonzerte im Rahmen einer europäischen Kreuzfahrt auf der MS Artania."
+      "description": "Solistische Auftritte an Bord der MS Artania. "
     },
     {
       "title": "Midsummer Vilnius",
-      "venue": "Midsummer-Festival",
+      "venue": "Festival",
       "date": "18. Juli 2022",
       "location": "Vilnius, Litauen",
-      "description": "Auftritt beim Midsummer Festival in Vilnius."
+      "description": "Kammermusik mit dem Tenor Charles Castronovo."
     },
     {
       "title": "Gemeindehaus Amrum",
-      "venue": "Konzert im Gemeindehaus Amrum",
+      "venue": "Konzert",
       "date": "5. Mai 2022",
-      "location": "Berlin, Deutschland",
-      "description": "Rezital im Gemeindehaus Amrum."
+      "location": "Amrum, Deutschland",
+      "description": "Rezital im Gemeindehaus."
     },
     {
       "title": "Jagdzeugmagazin Schloss Grunewald",
-      "venue": "Konzert im Jagdzeugmagazin",
+      "venue": "Konzert",
       "date": "6. März 2022",
       "location": "Berlin, Deutschland",
-      "description": "Kammermusikalischer Abend im Jagdzeugmagazin von Schloss Grunewald."
+      "description": "Rezital im Jagdzeugmagazin."
     },
     {
       "title": "Sala Nietzsche",
-      "venue": "Konzert in der Sala Nietzsche",
+      "venue": "Konzert",
       "date": "5. Februar 2022",
       "location": "Lissabon, Portugal",
-      "description": "Solokonzert in der Sala Nietzsche in Lissabon."
+      "description": "Kammermusikalischer Abend im Sala Nietzsche in Lissabon."
+    },
+    {
+      "title": "Schloss Grunewald",
+      "venue": "Konzert",
+      "date": "24. Juli 2021",
+      "location": "Berlin, Deutschland",
+      "description": "Open-Air-Konzert mit Streichquartett."
     }
   ]
 },

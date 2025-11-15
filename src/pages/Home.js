@@ -61,9 +61,9 @@ export default function Home() {
                   <h3 className="home-feature-heading">
                     {t(`home.features.${feature.id}.title`)}
                   </h3>
-                  <p className="home-feature-text">
+                  {/* <p className="home-feature-text">
                     {t(`home.features.${feature.id}.description`)}
-                  </p>
+                  </p> */}
                 </Link>
               );
             })}

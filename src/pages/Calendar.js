@@ -11,7 +11,7 @@ export default function CalendarPage() {
     <div className="calendar-page">
       <div className="calendar-inner">
         <h1 className="calendar-title">{t("calendar.title")}</h1>
-        <p className="calendar-subtitle">{t("calendar.subtitle")}</p>
+        {/* <p className="calendar-subtitle">{t("calendar.subtitle")}</p> */}
 
         <div className="calendar-events">
           {events.map((event, index) => (

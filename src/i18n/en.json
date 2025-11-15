@@ -12,10 +12,10 @@
   "about": {
   "title": "About",
   "subtitle": "My musical journey",
-  "bio1": "Berlin-born guitarist Eileen Baum received her first guitar lessons at the age of ten. Her musical talent soon became evident, and three years later she met Prof. Rainer Feldmann, who was to become a key artistic mentor.",
-  "bio2": "From 2009 to 2014 she studied with Prof. Feldmann at the Berlin University of the Arts, completing her studies in 2016 with the distinguished concert exam. Masterclasses with renowned artists such as David Russell, Álvaro Pierri and Aniello Desiderio further shaped her technical refinement and expressive sound palette.",
-  "bio3": "Eileen Baum has taken part in numerous national and international competitions. In 2005 she was awarded first prize in the guitar duo category at the German competition “Jugend musiziert”, an early milestone in her artistic development.",
-  "bio4": "Alongside her solo career, she regularly performs in various chamber music ensembles in Germany and abroad. In 2019 her debut album “SCHMUCKSTÜCKE” was released on the Czech label ArcoDiva, featuring works by Heitor Villa-Lobos, Joaquín Rodrigo and Johann Sebastian Bach and showcasing her stylistic range and attention to detail.",
+"bio1": "Born in Berlin, the guitarist Eileen Baum, received her first guitar lessons at the age of 10. Three years later, she met Prof. Rainer Feldmann, with whom she studied guitar at the University of the Arts in Berlin from 2009 to 2014.",
+"bio2": "In 2016, she completed her studies with a concert diploma. She received further important impulses in master classes, among others from David Russell, Álvaro Pierri, and Aniello Desiderio.",
+"bio3": "Eileen Baum has participated in numerous national and international competitions. In 2005, she received the first prize in the guitar duo category at 'Jugend musiziert'.",
+"bio4": "In 2019, the Czech label ArcoDiva released her first album entitled 'SCHMUCKSTÜCKE', featuring works by H. Vila-Lobos, J. Rodrigo, and J.S. Bach. In addition to her solo activities, she has played in numerous chamber music ensembles both nationally and internationally.",
   "educationTitle": "Education",
   "awardsTitle": "Awards",
   "educationList": [
@@ -75,82 +75,96 @@
   "subtitle": "Previous Events",
   "events": [
     {
-      "title": "MS Amadea",
-      "venue": "Concert tour on board MS Amadea",
-      "date": "11–25 September 2024",
-      "location": "England, France, Spain",
-      "description": "Solo performances during a cruise on board the MS Amadea."
-    },
-    {
-      "title": "Sommer Palais Dresden",
-      "venue": "Recital at the Sommerpalais Dresden",
-      "date": "27 July 2024",
-      "location": "Dresden, Germany",
-      "description": "Recital in the historic Sommerpalais in Dresden."
-    },
-    {
-      "title": "MS Artania",
-      "venue": "Concert tour on board MS Artania",
-      "date": "27 June – 11 July 2024",
-      "location": "Norway",
-      "description": "Guitar concerts on board the MS Artania during a cruise along the Norwegian coast."
-    },
-    {
-      "title": "Dominikanerkloster",
-      "venue": "Concert at the Dominican Monastery",
-      "date": "9 September 2023",
-      "location": "Prenzlau, Germany",
-      "description": "Solo recital at the historic Dominican Monastery in Prenzlau."
-    },
-    {
-      "title": "Barockschloss Zeilitzheim",
-      "venue": "Concert at Baroque Castle Zeilitzheim",
-      "date": "26 May 2023",
-      "location": "Kolitzheim, Germany",
-      "description": "Chamber music evening at Baroque Castle Zeilitzheim."
-    },
-    {
-      "title": "MS Artania",
-      "venue": "Concert tour on board MS Artania",
-      "date": "21 March – 7 April 2023",
-      "location": "Africa & Spain",
-      "description": "Solo performances during a cruise on board the MS Artania around Africa and Spain."
-    },
-    {
-      "title": "MS Artania",
-      "venue": "Concert tour on board MS Artania",
-      "date": "9–29 October 2022",
-      "location": "Europe",
-      "description": "Guitar concerts as part of a European cruise on the MS Artania."
-    },
-    {
-      "title": "Midsummer Vilnius",
-      "venue": "Midsummer Festival",
-      "date": "18 July 2022",
-      "location": "Vilnius, Lithuania",
-      "description": "Performance at the Midsummer Festival in Vilnius."
-    },
-    {
-      "title": "Gemeindehaus Amrum",
-      "venue": "Concert at Gemeindehaus Amrum",
-      "date": "5 May 2022",
-      "location": "Berlin, Germany",
-      "description": "Recital at Gemeindehaus Amrum."
-    },
-    {
-      "title": "Jagdzeugmagazin Schloss Grunewald",
-      "venue": "Concert at the Jagdzeugmagazin",
-      "date": "6 March 2022",
-      "location": "Berlin, Germany",
-      "description": "Chamber music evening at the Jagdzeugmagazin of Grunewald Castle."
-    },
-    {
-      "title": "Sala Nietzsche",
-      "venue": "Concert at Sala Nietzsche",
-      "date": "5 February 2022",
-      "location": "Lisbon, Portugal",
-      "description": "Solo recital at Sala Nietzsche in Lisbon."
-    }
+  "title": "Schloss Biesdorf",
+  "venue": "Matinee",
+  "date": "8 March 2026",
+  "location": "Berlin, Germany",
+  "description": "Aurelis Guitar Quartet."
+},
+{
+  "title": "MS Amadea",
+  "venue": "Concert Tour",
+  "date": "11–25 September 2024",
+  "location": "England, France, Spain",
+  "description": "Solo performances aboard the MS Amadea."
+},
+{
+  "title": "Sommer Palais Dresden",
+  "venue": "Festival",
+  "date": "27 July 2024",
+  "location": "Dresden, Germany",
+  "description": "Open air solo concert."
+},
+{
+  "title": "MS Artania",
+  "venue": "Concert Tour",
+  "date": "27 June – 11 July 2024",
+  "location": "Norway",
+  "description": "Solo performances aboard the MS Artania along the Norwegian coast."
+},
+{
+  "title": "Dominican Monastery Prenzlau",
+  "venue": "Concert",
+  "date": "9 September 2023",
+  "location": "Prenzlau, Germany",
+  "description": "Recital in the historic Dominican Monastery."
+},
+{
+  "title": "Baroque Palace Zeilitzheim",
+  "venue": "Concert",
+  "date": "26 May 2023",
+  "location": "Kolitzheim, Germany",
+  "description": "Recital at Baroque Palace Zeilitzheim."
+},
+{
+  "title": "MS Artania",
+  "venue": "Concert Tour",
+  "date": "21 March – 7 April 2023",
+  "location": "Africa & Spain",
+  "description": "Solo performances aboard the MS Artania around Africa and Spain."
+},
+{
+  "title": "MS Artania",
+  "venue": "Concert Tour",
+  "date": "9–29 October 2022",
+  "location": "Europe",
+  "description": "Solo performances aboard the MS Artania."
+},
+{
+  "title": "Midsummer Vilnius",
+  "venue": "Festival",
+  "date": "18 July 2022",
+  "location": "Vilnius, Lithuania",
+  "description": "Chamber music with tenor Charles Castronovo."
+},
+{
+  "title": "Gemeindehaus Amrum",
+  "venue": "Concert",
+  "date": "5 May 2022",
+  "location": "Amrum, Germany",
+  "description": "Recital in the Gemeindehaus."
+},
+{
+  "title": "Jagdzeugmagazin Grunewald Castle",
+  "venue": "Concert",
+  "date": "6 March 2022",
+  "location": "Berlin, Germany",
+  "description": "Recital at the Jagdzeugmagazin."
+},
+{
+  "title": "Sala Nietzsche",
+  "venue": "Concert",
+  "date": "5 February 2022",
+  "location": "Lisbon, Portugal",
+  "description": "Chamber music at Sala Nietzsche in Lisbon."
+},
+{
+  "title": "Schloss Grunewald",
+  "venue": "Concert",
+  "date": "24. July 2021",
+  "location": "Berlin, Germany",
+  "description": "Open air concert with string quartet."
+}
   ]
 },
 "contact": {

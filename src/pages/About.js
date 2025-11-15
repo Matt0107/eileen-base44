@@ -33,7 +33,7 @@ export default function About() {
           <p>{t("about.bio4")}</p>
         </div>
 
-        {/* Education / Awards */}
+        {/* Education / Awards
         <div className="about-grid">
           <div className="about-column">
             <h2 className="about-section-title">
@@ -62,7 +62,7 @@ export default function About() {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

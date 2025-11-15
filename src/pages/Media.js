@@ -9,27 +9,27 @@ export default function Media() {
     {
       url: "https://www.youtube-nocookie.com/embed/tHc_bCTKB4w?si=zzgKoh05Uqn44Rag",
       title: t("media.video1Title"),
-      description: t("media.video1Desc")
+      // description: t("media.video1Desc")
     },
     {
       url: "https://www.youtube-nocookie.com/embed/55kU1yW8sVw?si=Aw_V9r-gEACtoSZO",
       title: t("media.video2Title"),
-      description: t("media.video2Desc")
+      // description: t("media.video2Desc")
     },
     {
       url: "https://www.youtube-nocookie.com/embed/Evd_xku8ZGc?si=scUHTVKb9zvPUR2u",
       title: t("media.video3Title"),
-      description: t("media.video3Desc")
+      // description: t("media.video3Desc")
     },
     {
       url: "https://www.youtube-nocookie.com/embed/h2jlBaOHae0?si=ob_0mnF9XK7NXztn",
       title: t("media.video4Title"),
-      description: t("media.video4Desc")
+      // description: t("media.video4Desc")
     },
     {
       url: "https://www.youtube-nocookie.com/embed/3oThh122l_U?si=IUfw6JLWcjeFoKPE",
       title: t("media.video5Title"),
-      description: t("media.video5Desc")
+      // description: t("media.video5Desc")
     }
   ];
 

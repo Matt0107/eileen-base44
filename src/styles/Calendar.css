@@ -15,7 +15,7 @@
 .calendar-title {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.5rem, 5vw, 3.2rem);
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .calendar-subtitle {
