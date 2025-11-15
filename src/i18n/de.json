@@ -9,6 +9,12 @@
   "footer": {
     "copyright": "© 2025 Eileen Baum. Alle Rechte vorbehalten."
   },
+  "cookies": {
+  "text": "Wir verwenden Cookies, um eingebettete YouTube-Videos anzuzeigen. Sie können diese akzeptieren oder ablehnen.",
+  "accept": "Akzeptieren",
+  "reject": "Ablehnen"
+},
+
   "about": {
   "title": "Über Mich",
   "subtitle": "Musikalischer Werdegang",
@@ -55,6 +61,8 @@
     }
   },
 "media": {
+  "cookiesPlaceholder": "YouTube-Videos werden nur geladen, wenn Sie Cookies für eingebettete Inhalte akzeptieren.",
+"cookiesAcceptButton": "Cookies akzeptieren und Video laden",
   "title": "Medien",
   "subtitle": "Aufführungen und Aufnahmen",
   "videosTitle": "Videoaufnahmen",

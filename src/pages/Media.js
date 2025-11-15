@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Media.css";
 import { useTranslation } from "react-i18next";
+import YouTubeConsentFrame from "../components/YouTubeConsentFrame";
 
 export default function Media() {
   const { t } = useTranslation();
@@ -9,28 +10,23 @@ export default function Media() {
     {
       url: "https://www.youtube-nocookie.com/embed/tHc_bCTKB4w?si=zzgKoh05Uqn44Rag",
       title: t("media.video1Title"),
-      // description: t("media.video1Desc")
     },
     {
       url: "https://www.youtube-nocookie.com/embed/55kU1yW8sVw?si=Aw_V9r-gEACtoSZO",
       title: t("media.video2Title"),
-      // description: t("media.video2Desc")
     },
     {
       url: "https://www.youtube-nocookie.com/embed/Evd_xku8ZGc?si=scUHTVKb9zvPUR2u",
       title: t("media.video3Title"),
-      // description: t("media.video3Desc")
     },
     {
       url: "https://www.youtube-nocookie.com/embed/h2jlBaOHae0?si=ob_0mnF9XK7NXztn",
       title: t("media.video4Title"),
-      // description: t("media.video4Desc")
     },
     {
       url: "https://www.youtube-nocookie.com/embed/3oThh122l_U?si=IUfw6JLWcjeFoKPE",
       title: t("media.video5Title"),
-      // description: t("media.video5Desc")
-    }
+    },
   ];
 
   return (
@@ -43,17 +39,11 @@ export default function Media() {
           {videos.map((video, index) => (
             <div key={index} className="media-card">
               <div className="media-video-wrapper">
-                <iframe
-                  className="media-video"
-                  src={video.url}
-                  title={video.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                <YouTubeConsentFrame url={video.url} title={video.title} />
               </div>
               <h3 className="media-video-title">{video.title}</h3>
-              <p className="media-video-desc">{video.description}</p>
+              {/* Si un jour tu remets les descriptions : */}
+              {/* <p className="media-video-desc">{video.description}</p> */}
             </div>
           ))}
         </div>

@@ -7,11 +7,13 @@ import About from "./pages/About";
 import Media from "./pages/Media";
 import CalendarPage from "./pages/Calendar";
 import Contact from "./pages/Contact";
+import CookieBanner from "./components/CookieBanner";
 
 export default function App() {
   return (
     <Router>
       <Layout>
+        <CookieBanner />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

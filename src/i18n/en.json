@@ -9,6 +9,11 @@
   "footer": {
     "copyright": "© 2025 Eileen Baum. All rights reserved."
   },
+  "cookies": {
+  "text": "We use cookies to display embedded YouTube videos. You can accept or decline them.",
+  "accept": "Accept",
+  "reject": "Decline"
+},
   "about": {
   "title": "About",
   "subtitle": "My musical journey",
@@ -55,6 +60,8 @@
     }
   },
 "media": {
+  "cookiesPlaceholder": "YouTube videos are only loaded when you accept cookies for embedded content.",
+"cookiesAcceptButton": "Accept cookies and load video",
   "title": "Media",
   "subtitle": "Performances and Recordings",
   "videosTitle": "Video Recordings",

@@ -95,7 +95,8 @@
 }
 
 .home-feature-card {
-  border: 1px solid #e5e5e5;
+  border: 1.5px solid #322f2f;
+  border-radius: 5px;
   padding: 2rem;
   text-decoration: none;
   color: #000000;
@@ -174,8 +175,9 @@
     font-size: 1rem;
   }
 
-  .home-features-grid {
-    grid-template-columns: 1fr;
+ .home-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 colonnes */
+    gap: 1.5rem; /* léger ajustement pour mobiles/tablettes */
   }
 
   .home-feature-card {
