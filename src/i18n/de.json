@@ -32,7 +32,8 @@
   "home": {
     "title": "Eileen Baum",
     "subtitle": "Klassische Gitarristin",
-    "description": "Erleben Sie die zeitlose Schönheit der klassischen Gitarre durch virtuose Interpretationen und leidenschaftliche Darbietungen.",
+    "quote": "„Die Gitarre ist ein kleines Orchester. Sie ist polyphon. Jede Saite hat ihre eigene Farbe, ihre eigene Stimme.“",
+    "quoteAuthor": "— Andrés Segovia",
     "featuresTitle": "Entdecken",
     "features": {
       "about": {

@@ -38,7 +38,8 @@ export default function Home() {
           <h1 className="home-title">{t("home.title")}</h1>
           <p className="home-subtitle">{t("home.subtitle")}</p>
           <div className="home-divider" />
-          <p className="home-description">{t("home.description")}</p>
+          <p className="home-quote">{t("home.quote")}</p>
+          <p className="home-quote-author">{t("home.quoteAuthor")}</p>
         </div>
       </section>
 

@@ -29,10 +29,11 @@
     "Release of the debut album “SCHMUCKSTÜCKE” (ArcoDiva label, 2019)"
   ]
 },
-  "home": {
+   "home": {
     "title": "Eileen Baum",
     "subtitle": "Classical Guitarist",
-    "description": "Experience the timeless beauty of classical guitar through virtuoso interpretations and passionate performances.",
+    "quote": "“The guitar is a small orchestra. It is polyphonic. Every string is a different color, a different voice.”",
+    "quoteAuthor": "— Andrés Segovia",
     "featuresTitle": "Discover",
     "features": {
       "about": {
