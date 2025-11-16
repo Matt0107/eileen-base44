@@ -12,7 +12,7 @@
     <!-- Title -->
     <title>Eileen Baum – Classical Guitarist</title>
 
-    <!-- Favicon (ancien code adapté à CRA) -->
+    <!-- Favicon -->
     <link rel="icon" href="%PUBLIC_URL%/assets/guitar.ico" />
 
     <!-- PWA / Theme -->
@@ -32,10 +32,9 @@
       property="og:description"
       content="Discover Berlin-born classical guitarist Eileen Baum: concerts, recordings, media and contact."
     />
-    <!-- Image à créer dans public/assets/og-image.jpg si tu veux un visuel de partage -->
     <meta property="og:image" content="%PUBLIC_URL%/assets/og-image.jpg" />
 
-    <!-- Twitter Card (si un jour elle est partagée sur X/Twitter) -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Eileen Baum – Classical Guitarist" />
     <meta
@@ -43,7 +42,8 @@
       content="Berlin-born classical guitarist Eileen Baum. Concerts, recordings, media and contact."
     />
     <meta name="twitter:image" content="%PUBLIC_URL%/assets/og-image.jpg" />
-    <!-- Données structurées Schema.org (aide Google à comprendre le site) -->
+
+    <!-- Données structurées Schema.org -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -66,7 +66,13 @@
   </head>
 
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Noscript neutre, sans message sur JavaScript -->
+    <noscript>
+      <div>
+        Eileen Baum – klassische Gitarristin aus Berlin.
+      </div>
+    </noscript>
+
     <div id="root"></div>
   </body>
 </html>
