@@ -7,6 +7,9 @@ import "../styles/Home.css";
 export default function Home() {
   const { t } = useTranslation();
 
+  // On construit l'URL vers l'image dans public/assets
+  const heroImage = process.env.PUBLIC_URL + "/assets/release.jpg";
+
   const features = [
     {
       id: "about",
@@ -33,7 +36,10 @@ export default function Home() {
   return (
     <div className="home-page">
       {/* Hero */}
-      <section className="home-hero">
+      <section
+        className="home-hero"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
         <div className="home-hero-inner">
           <h1 className="home-title">{t("home.title")}</h1>
           <p className="home-subtitle">{t("home.subtitle")}</p>
@@ -61,7 +67,8 @@ export default function Home() {
                   <h3 className="home-feature-heading">
                     {t(`home.features.${feature.id}.title`)}
                   </h3>
-                  {/* <p className="home-feature-text">
+                  {/* Description désactivée pour l’instant
+                  <p className="home-feature-text">
                     {t(`home.features.${feature.id}.description`)}
                   </p> */}
                 </Link>

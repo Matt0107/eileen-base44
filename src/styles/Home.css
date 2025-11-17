@@ -7,25 +7,43 @@
 /* HERO */
 
 .home-hero {
+  position: relative;
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 1.5rem;
+
+  /* L'image vient du inline-style en JS : background-image: url(...)
+     On garde ici seulement le comportement */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Overlay blanc par-dessus l'image */
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.48); /* règle ici l’opacité */
+  pointer-events: none;
 }
 
 .home-hero-inner {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 2; /* pour passer au-dessus de l’overlay */
 }
 
 .home-title {
   font-family: "Playfair Display", "Times New Roman", serif;
   font-size: clamp(3.5rem, 7vw, 5rem);
-  /* plus proche de Base44 */
   font-weight: 400;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 2.5px rgba(22, 22, 21, 0.54);
 }
 
 .home-subtitle {
@@ -33,6 +51,7 @@
   margin-bottom: 1.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  text-shadow: 1px 1px 2.5px rgba(22, 22, 21, 0.222);
 }
 
 .home-divider {
@@ -52,6 +71,7 @@
   margin: 0.5rem auto 0.25rem auto;
   line-height: 1.7;
   color: #000000;
+  text-shadow: 1px 1px 1.5px rgba(22, 22, 21, 0.222);
 }
 
 .home-quote-author {
@@ -61,6 +81,7 @@
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   letter-spacing: 0.05em;
+   text-shadow: 1px 1px 8px rgb(66, 44, 13);
 }
 
 .home-description {
@@ -175,9 +196,9 @@
     font-size: 1rem;
   }
 
- .home-features-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 colonnes */
-    gap: 1.5rem; /* léger ajustement pour mobiles/tablettes */
+  .home-features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
   }
 
   .home-feature-card {
@@ -210,4 +231,5 @@
   .home-title {
     font-size: 2.1rem;
   }
+
 }
