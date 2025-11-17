@@ -1,10 +1,95 @@
 <?php
 // contact.php
 
+/* -------------------------------------------------------------
+   LANG DETECTION (DE or EN) for the fallback page (GET request)
+-------------------------------------------------------------- */
+function detectLanguage() {
+    if (!isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+        return 'en';
+    }
+
+    $langHeader = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+
+    if (strpos($langHeader, 'de') === 0) {
+        return 'de';
+    }
+
+    return 'en';
+}
+
+$lang = detectLanguage();
+
+/* -------------------------------------------------------------
+   TEXTS in both languages
+-------------------------------------------------------------- */
+$text = [
+    'de' => [
+        'title'        => 'Kontakt – Eileen Baum',
+        'infoLine1'    => 'Diese Seite wird ausschließlich vom Kontaktformular der Website verwendet.',
+        'backLink'     => 'Zurück zur Kontaktseite',
+        'autoRedirect' => 'Sie werden automatisch weitergeleitet…'
+    ],
+    'en' => [
+        'title'        => 'Contact – Eileen Baum',
+        'infoLine1'    => 'This page is used exclusively by the website’s contact form.',
+        'backLink'     => 'Back to contact page',
+        'autoRedirect' => 'You will be redirected automatically…'
+    ]
+];
+
+$current = $text[$lang];
+
+/* -------------------------------------------------------------
+   HANDLE NON-POST REQUEST → FALLBACK PAGE
+-------------------------------------------------------------- */
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: /contact');
+    header('Content-Type: text/html; charset=utf-8');
+    ?>
+    <!DOCTYPE html>
+    <html lang="<?= $lang ?>">
+    <head>
+        <meta charset="utf-8">
+        <title><?= htmlspecialchars($current['title']); ?></title>
+
+        <!-- Automatic redirect after 3 seconds -->
+        <meta http-equiv="refresh" content="3;url=/contact" />
+
+        <style>
+            body {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                padding: 2rem;
+                text-align: center;
+            }
+            p { margin: 0.5rem 0; }
+            a {
+                color: #000;
+                text-decoration: none;
+                border-bottom: 1px solid #ccc;
+            }
+            a:hover { border-color: #000; }
+            .small {
+                margin-top: 1rem;
+                font-size: 0.9rem;
+                color: #666;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p><?= htmlspecialchars($current['infoLine1']); ?></p>
+        <p><a href="/contact"><?= htmlspecialchars($current['backLink']); ?></a></p>
+        <p class="small"><?= htmlspecialchars($current['autoRedirect']); ?></p>
+    </body>
+    </html>
+    <?php
     exit;
 }
+
+
+/* -------------------------------------------------------------
+   HANDLE POST REQUEST → SEND EMAIL
+-------------------------------------------------------------- */
 
 $input = file_get_contents('php://input');
 $data = json_decode($input, true);
