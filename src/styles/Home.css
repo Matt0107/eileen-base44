@@ -14,7 +14,7 @@
   justify-content: center;
   padding: 0 1.5rem;
 
-  /* L'image vient du inline-style en JS : background-image: url(...)
+  /* L'image vient du inline-style en JS : background-image: url(...).
      On garde ici seulement le comportement */
   background-size: cover;
   background-position: center;
@@ -81,7 +81,7 @@
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   letter-spacing: 0.05em;
-   text-shadow: 1px 1px 8px rgb(66, 44, 13);
+  text-shadow: 1px 1px 8px rgb(66, 44, 13);
 }
 
 .home-description {
@@ -91,7 +91,9 @@
   line-height: 1.8;
 }
 
-/* FEATURES */
+/* ===========================
+   FEATURES
+   =========================== */
 
 .home-features-section {
   padding: 4rem 1.5rem;
@@ -100,13 +102,18 @@
 .home-features-inner {
   max-width: 1120px;
   margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-.home-features-title {
-  font-family: "Playfair Display", "Times New Roman", serif;
-  font-size: 2.1rem;
+.home-section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
   text-align: center;
   margin-bottom: 3rem;
+  margin-top: 3rem;
+  letter-spacing: 0.03em;
+  font-weight: 400;
 }
 
 .home-features-grid {
@@ -115,49 +122,105 @@
   gap: 2rem;
 }
 
+/* Carte */
+
 .home-feature-card {
-  border: 1.5px solid #322f2f;
-  border-radius: 5px;
-  padding: 2rem;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
   text-decoration: none;
-  color: #000000;
-  transition: border-color 0.3s ease, transform 0.3s ease;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.26);
+  transform: translateY(0);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .home-feature-card:hover {
-  border-color: var(--gold);
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
 }
+
+/* Image de fond */
+
+.home-feature-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  transition: transform 0.7s ease, filter 0.7s ease;
+  filter: grayscale(100%) contrast(1.1) brightness(0.8);
+}
+
+.home-feature-card:hover .home-feature-bg {
+  transform: scale(1.06);
+  filter: grayscale(20%) contrast(1.1) brightness(0.95);
+}
+
+/* Overlay “glassmorphism” */
+
+.home-feature-glass {
+  position: relative;
+  z-index: 1;
+  min-height: 210px;
+  padding: 2.1rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background: radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.35),
+      rgba(0, 0, 0, 0.72)
+    );
+  background-blend-mode: overlay;
+  backdrop-filter: blur(18px);
+}
+
+/* Icone + titre */
 
 .home-feature-icon {
-  width: 3rem;
-  height: 3rem;
-  margin-bottom: 1.5rem;
-  color: #000000;
-  transition: color 0.3s ease;
-}
-
-.home-feature-card:hover .home-feature-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-bottom: 1.3rem;
   color: var(--gold);
+  transition: transform 0.35s ease, color 0.35s ease;
 }
 
 .home-feature-heading {
   font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 1.2rem;
-  margin-bottom: 0.75rem;
-  transition: color 0.3s ease;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
+  transition: color 0.35s ease;
+}
+
+.home-feature-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* Hover state : accent sur l’or */
+
+.home-feature-card:hover .home-feature-icon {
+  transform: translateY(-3px);
+  color: #fdf6dd;
 }
 
 .home-feature-card:hover .home-feature-heading {
   color: var(--gold);
 }
 
-.home-feature-text {
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-/* IMAGE SECTION */
+/* ===========================
+   IMAGE SECTION
+   =========================== */
 
 .home-image-section {
   padding: 4rem 1.5rem 5rem;
@@ -179,14 +242,24 @@
   border-radius: 5px;
 }
 
-/* RESPONSIVE */
+/* ===========================
+   RESPONSIVE
+   =========================== */
 
+/* TABLETTE : 2 colonnes de features */
 @media (max-width: 1024px) {
+  .home-features-inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .home-features-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.8rem;
   }
 }
 
+/* MOBILE LARGE : 1 colonne centrée pour les features */
 @media (max-width: 768px) {
   .home-title {
     font-size: clamp(2.4rem, 7vw, 3rem);
@@ -196,13 +269,31 @@
     font-size: 1rem;
   }
 
+  .home-features-section {
+    padding: 3.2rem 1.5rem;
+  }
+
+  .home-features-inner {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .home-features-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    max-width: 420px; /* les cartes ne prennent pas tout l’écran */
+    margin: 0 auto;   /* centré */
     gap: 1.5rem;
   }
 
-  .home-feature-card {
-    padding: 1.5rem;
+  .home-feature-glass {
+    min-height: 180px;
+    padding: 1.8rem 1.4rem;
+  }
+
+  .home-section-title {
+    margin-top: 2.2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
   }
 
   .home-image-section {
@@ -218,6 +309,7 @@
   }
 }
 
+/* PETIT MOBILE */
 @media (max-width: 480px) {
   .home-hero {
     padding: 0 1rem;
@@ -228,8 +320,22 @@
     padding: 3rem 1rem;
   }
 
+  .home-features-inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .home-features-grid {
+    max-width: 360px;
+    gap: 1.2rem;
+  }
+
+  .home-feature-glass {
+    min-height: 170px;
+    padding: 1.6rem 1.2rem;
+  }
+
   .home-title {
     font-size: 2.1rem;
   }
-
 }
