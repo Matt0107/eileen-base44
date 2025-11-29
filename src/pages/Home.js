@@ -15,28 +15,28 @@ export default function Home() {
       icon: Music,
       link: "/about",
       image:
-        "https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1200&q=80",
+        "/assets/release.jpg",
     },
     {
       id: "media",
       icon: Video,
       link: "/media",
       image:
-        "https://images.unsplash.com/photo-1516031190212-da133013de50?auto=format&fit=crop&w=1200&q=80",
+        "/assets/release.jpg",
     },
     {
       id: "calendar",
       icon: CalendarIcon,
       link: "/calendar",
       image:
-        "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
+        "/assets/release.jpg",
     },
     {
       id: "contact",
       icon: Mail,
       link: "/contact",
       image:
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+        "/assets/release.jpg",
     },
   ];
 
