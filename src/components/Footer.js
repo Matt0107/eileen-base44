@@ -93,7 +93,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p className="footer-copy">{t("footer.copyright")} Powered by Serve And Code.</p>
+        <p className="footer-copy">{t("footer.copyright")} Powered by <a href="https://serveandcode.com" target="_blank" rel="noopener noreferrer" className="footer-link">Serve & Code</a></p> 
       </div>
     </footer>
   );
