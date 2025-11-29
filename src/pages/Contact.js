@@ -151,6 +151,7 @@ export default function Contact() {
             </div>
 
             {/* Image etc. ici comme tu l'avais */}
+            <img className="contact-pic" src="../../assets/contact.jpg" alt="contact-pic" />
           </div>
         </div>
       </div>

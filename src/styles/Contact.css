@@ -166,10 +166,11 @@
   overflow: hidden;
 }
 
-.contact-image {
+.contact-pic {
   width: 100%;
   height: 140%;
   object-fit: cover;
+  border-radius: 5px 140px 10px 85px;
 }
 
 /* ========================= */
